@@ -1,0 +1,34 @@
+<form >
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>注册：</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>  
+            <mat-form-field class="fullWidth">
+                <input matInput placeholder="您的Email" >
+            </mat-form-field>
+            <mat-form-field  class="fullWidth">
+                <input matInput placeholder="您的姓名" >
+            </mat-form-field>
+            <mat-form-field  class="fullWidth">
+                <input matInput placeholder="您的密码" >
+            </mat-form-field>
+            <mat-form-field  class="fullWidth">
+                <input matInput placeholder="请确认您的密码" >
+            </mat-form-field>
+            <mat-grid-list cols='5' >
+                <mat-grid-tile *ngFor="let item of items">
+                    <mat-icon class="avatar" [svgIcon]='item'></mat-icon>
+                </mat-grid-tile>
+              </mat-grid-list>
+            <button 
+                mat-raised-button
+                type="button"
+                color='primary'
+            >注册</button>
+        </mat-card-content>
+        <mat-card-actions >
+            
+        </mat-card-actions>
+    </mat-card>
+</form>

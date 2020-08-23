@@ -1,0 +1,12 @@
+form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+mat-card{
+    height: 25em;
+    flex: 0 0 20em;
+}

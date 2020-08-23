@@ -1,0 +1,12 @@
+<app-project-item 
+    class="card" 
+    *ngFor="let project of projects"
+    [project]='project'
+    (inviteEmit)='inviteEmitHandle()'
+    (updateEmit)='updateEmitHandle()'
+    (deleteEmit)='deleteEmitHandle()'
+>   
+</app-project-item>
+<button class="fab-button" mat-fab type="button" (click)='addNewPrjectDialog()'>
+    <mat-icon>add</mat-icon>
+</button>

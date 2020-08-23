@@ -1,0 +1,17 @@
+<form >
+    <h2 matDialogTitle>邀请组员：</h2>
+    <div mat-dialog-content>
+        <mat-form-field class="fullWidth">
+            <input matInput placeholder="组员姓名" [matAutocomplete]="auto">
+        </mat-form-field> 
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]='inviteComplete'>
+            <mat-option *ngFor="let item of options" [value]='item'>
+                {{item.name}}
+            </mat-option>
+        </mat-autocomplete>
+    </div>
+    <div mat-dialog-actions>
+        <button color='primary' type="button" mat-raised-button >保存</button>
+        <button type="button" mat-button mat-dialog-close>关闭</button>
+    </div>
+</form>

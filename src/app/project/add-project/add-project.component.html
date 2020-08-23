@@ -1,0 +1,15 @@
+<form >
+    <h2 matDialogTitle>{{title}}</h2>
+    <div mat-dialog-content>
+        <mat-form-field class="fullWidth">
+            <input matInput placeholder="项目名称" >
+        </mat-form-field>
+        <mat-form-field  class="fullWidth">
+            <input matInput placeholder="项目描述" >
+        </mat-form-field>   
+    </div>
+    <div mat-dialog-actions>
+        <button color='primary' type="button" mat-raised-button (click)='saveProject()'>保存</button>
+        <button type="button" mat-button mat-dialog-close>关闭</button>
+    </div>
+</form>
