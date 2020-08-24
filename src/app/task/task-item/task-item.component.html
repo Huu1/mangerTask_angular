@@ -4,6 +4,7 @@
         'priority-normal':item.priority===0,
         'priority-important':item.priority===1
 }"
+    [@item]='widerPriority'
     (click)="taskUpdateClick()"
 >
     <mat-checkbox (click)="stopPropagation($event)" [checked]='item.complete' class="status"></mat-checkbox>
